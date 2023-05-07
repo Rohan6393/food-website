@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online food Delivery Service in India</title>
+    <link rel="stylesheet" media="screen and (max-width: 1080px)" href="CSS/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Supermercado+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        /* CSS Variables */
+        :root {
+            --navbar-height: 59px;
+        }
+
+        /* Navigation bar */
+        #navbar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        /* logo and Image  */
+        #logo {
+            margin: 10px 20px;
+        }
+
+        #logo img {
+            height: 56px;
+        }
+
+        /* Navigation bar:list styling */
+        #navbar {
+            position: absolute;
+            width: 100%;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.2rem;
+
+        }
+
+        #navbar ul li a {
+            color: rgb(193, 255, 250);
+            display: block;
+            padding: 5px 8px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 90px 200px;
+            height: 212px;
+        }
+
+        #home::before {
+
+            content: "";
+            position: absolute;
+            background: url(IMAGE/bg.jpg)no-repeat center center/cover;
+            height: 60%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        footer{
+            background: black;
+            color: white;
+            padding: 9px 20px;
+            text-align: center;
+        }
+
+        /* Utility class */
+        .h-primary {
+            font-size: 2.8rem;
+            padding: 12px;
+            text-align: center;
+
+        }
+
+        .h-secondary {
+            font-size: 2rem;
+            padding: 12px;
+        }
+
+        #home h2 {
+            color: white;
+            align-items: center;
+            /* font-family: 'Supermercado One', cursive; */
+        }
+
+        #home p {
+            color: white;
+            align-items: center;
+            font-size: 1.3rem;
+            font-family: 'Supermercado One', cursive;
+        }
+
+        .btn {
+
+            padding: 5px 5px;
+            color: white;
+            background-color: tomato;
+            border: 2px solid red;
+            margin: 17px;
+            font-size: 1rem;
+        }
+
+        /* services section  */
+
+        #services {
+            margin: 34px;
+            display: flex;
+
+
+        }
+
+        #services .box {
+
+            padding: 9px;
+            margin: -15px 9px;
+            background-color: #feeded;
+            border: 2px solid red;
+            border-radius: 44px;
+
+        }
+
+        #services .box img {
+            height: 100px;
+            border-radius: 55px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box h2 {
+            text-align: center;
+        }
+
+        #services .box p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        /* client section  */
+#client-section{
+    height: 344px;
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('IMAGE/pakore.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* opacity: 0.8; */
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 134px;
+    border:2px solid black;
+    border-radius: 10px;
+
+
+}
+.item{
+    padding: 10px;
+    margin: 10px;
+
+}
+
+/* Contact Section */
+#contact{
+    height: 500px;
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('IMAGE/jalebi.jpg');
+    z-index: -1;
+
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    
+    border: 2px solid black;
+    border-radius: 8px;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1-3rem;
+
+}
+#contact-box{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+
+            <img src="IMAGE/logo.png" alt="error">
+
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Service</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <section id="home">
+        <h2 class="h-primary">
+            WElCOME TO MY SITE
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione culpa dolores officia! Quas nam quis
+            tempore nulla maxime enim cum quos, praesentium, tempora perferendis dolore quam cumque quia quisquam nemo
+            doloribus ipsum soluta totam.
+        </p>
+        <button class="btn">Order now</button>
+    </section>
+    <section class="services-conatainer">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="IMAGE/burger.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus corrupti possimus ipsam id
+                    eos, exercitationem, iste magnam consequatur et recusandae soluta numquam deleniti quis maxime nulla
+                    necessitatibus autem aliquid minima cum quae. Porro.
+                </p>
+            </div>
+            <div class="box">
+                <img src="IMAGE/biryani.jpg" alt="">
+                <h2 class="h-secondary center">bulk Ordering</h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus corrupti possimus ipsam id
+                    eos, exercitationem, iste magnam consequatur et recusandae soluta numquam deleniti quis maxime nulla
+                    necessitatibus autem aliquid minima cum quae. Porro.
+                </p>
+            </div>
+            <div class="box">
+                <img src="IMAGE/delivery.png" alt="">
+                <h2 class="h-secondary center">Food delivery</h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus corrupti possimus ipsam id
+                    eos, exercitationem, iste magnam consequatur et recusandae soluta numquam deleniti quis maxime nulla
+                    necessitatibus autem aliquid minima cum quae. Porro.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our class</h1>
+        <div id="clients">
+            <div class="item">
+                <img src="IMAGE/contact.png" alt="Our client">
+            </div>
+            <div class="item">
+                <img src="IMAGE/Dosa.jpg" alt="Our client">
+            </div>
+            <div class="item">
+                <img src="IMAGE/idli.jpg" alt="Our client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form group">
+                    <label for="name">Name</label>
+                    <input type"text" name="name" id="name " placeholder="Enter your name">
+                </div>
+                <div class="form group">
+                    <label for="name">Email</label>
+                    <input type"Email" name="name" id="name " placeholder="Enter your email">
+                </div>
+                <div class="form group">
+                    <label for="name">Phone number</label>
+                    <input type"phone " name="name" id="name " placeholder="Enter your Phone number">
+                </div>
+                <div class="form group">
+                    <label for="name">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" ></textarea>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="center">
+            Copyright &copy; www.nightcravings.com.All rights reserved!
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
